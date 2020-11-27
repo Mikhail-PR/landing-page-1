@@ -1,0 +1,17 @@
+mixin socials(mod)
+    div.socials(class=mod)
+        ul.socials__list
+            li.socials__list-item
+                a.socials__facebook(href="#")
+                    img.socials__facebook-img(src=require("./blocks/socials/img/facebook-icon.png").default, alt="Facebook" draggable="false")
+            li.socials__list-item
+                a.socials__instagram(href="#")
+                    img.socials__instagram-img(src=require("./blocks/socials/img/instagram-icon.png").default, alt="Instagram" draggable="false")
+            li.socials__list-item
+                a.socials__twitter(href="#")
+                    img.socials__twitter-img(src=require("./blocks/socials/img/twitter-icon.png").default, alt="Twitter" draggable="false")
+            li.socials__list-item
+                a.socials__linkedin(href="#")
+                    img.socials__linkedin-img(src=require("./blocks/socials/img/linkedin-icon.png").default, alt="Linkedin" draggable="false")
+        div.socials__btn-wrapper
+            +btn("button", "", "socials__show-btn")

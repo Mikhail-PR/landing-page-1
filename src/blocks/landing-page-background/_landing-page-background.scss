@@ -1,0 +1,123 @@
+.landing-page-background {
+  background: url("./blocks/landing-page-background/img/bg-explotion-left.png")
+      left 750px no-repeat,
+    url("./blocks/landing-page-background/img/bg-explotion-right.png") right
+      350px no-repeat,
+    url("./blocks/landing-page-background/img/bg-waves-left.png") left 1150px
+      no-repeat,
+    url("./blocks/landing-page-background/img/bg-waves-right.png") right 50px
+      no-repeat,
+    url("./blocks/landing-page-background/img/bg-dots.png") top no-repeat,
+    url("./blocks/landing-page-background/img/bg-explotion-left2.png") left
+      100px no-repeat,
+    url("./blocks/landing-page-background/img/bg-lines-right.png") right 3040px
+      no-repeat,
+    url("./blocks/landing-page-background/img/bg-lines-left.png") left 3900px
+      no-repeat,
+    url("./blocks/landing-page-background/img/bg-explotion-right2.png") right
+      4100px no-repeat,
+    url("./blocks/landing-page-background/img/bg-waves-right2.png") right 4100px
+      no-repeat,
+    url("./blocks/landing-page-background/img/bg-dots2.png") top no-repeat,
+    url("./blocks/landing-page-background/img/bg-paint-left.png") left bottom
+      70px no-repeat,
+    url("./blocks/landing-page-background/img/bg-paint-right.png") right bottom
+      no-repeat,
+    $main-color;
+}
+
+@media (max-width: $screen-xxl) {
+  .landing-page-background {
+    background: url("./blocks/landing-page-background/img/bg-explotion-left.png")
+        left 350px no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-right.png") right
+        150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-left.png") left 750px
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-right.png") right -350px
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-dots.png") top / 1300px
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-left2.png") left -800px
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-lines-right.png") right
+        2200px / 500px no-repeat,
+      url("./blocks/landing-page-background/img/bg-lines-left.png") left 2800px /
+        300px no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-right2.png") right
+        2900px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-right2.png") right
+        2700px no-repeat,
+      url("./blocks/landing-page-background/img/bg-dots2.png") top -1230px left 0
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-paint-left.png") left bottom
+        70px no-repeat,
+      url("./blocks/landing-page-background/img/bg-paint-right.png") right
+        bottom no-repeat,
+      $main-color;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .landing-page-background {
+    background: url("./blocks/landing-page-background/img/bg-explotion-left.png")
+        left 350px no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-right.png") right
+        150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-left.png") left 750px /
+        400px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-right.png") right 150px /
+        1000px no-repeat,
+      url("./blocks/landing-page-background/img/bg-dots.png") top / 1300px
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-left2.png") left
+        500px / 1200px no-repeat,
+      url("./blocks/landing-page-background/img/bg-lines-right.png") right
+        2400px / 300px no-repeat,
+      url("./blocks/landing-page-background/img/bg-lines-left.png") left 2800px /
+        300px no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-right2.png") right
+        2900px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-right2.png") right
+        2700px no-repeat,
+      url("./blocks/landing-page-background/img/bg-dots2.png") top -800px left 0
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-paint-left.png") left bottom
+        70px no-repeat,
+      url("./blocks/landing-page-background/img/bg-paint-right.png") right
+        bottom no-repeat,
+      $main-color;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .landing-page-background {
+    background: url("./blocks/landing-page-background/img/bg-explotion-left.png")
+        left 720px / 150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-right.png") right
+        250px / 150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-left.png") left 900px /
+        150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-right.png") right 520px /
+        500px no-repeat,
+      url("./blocks/landing-page-background/img/bg-dots.png") top / 1300px
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-left2.png") left
+        1490px / 500px no-repeat,
+      url("./blocks/landing-page-background/img/bg-lines-right.png") right
+        2200px / 200px no-repeat,
+      url("./blocks/landing-page-background/img/bg-lines-left.png") left 2650px /
+        100px no-repeat,
+      url("./blocks/landing-page-background/img/bg-explotion-right2.png") right
+        3200px / 150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-waves-right2.png") right
+        2750px / 150px no-repeat,
+      url("./blocks/landing-page-background/img/bg-dots2.png") top -800px left 0
+        no-repeat,
+      url("./blocks/landing-page-background/img/bg-paint-left.png") left bottom
+        70px no-repeat,
+      url("./blocks/landing-page-background/img/bg-paint-right.png") right
+        bottom no-repeat,
+      $main-color;
+  }
+}

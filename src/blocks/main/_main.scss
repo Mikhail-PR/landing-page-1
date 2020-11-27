@@ -1,0 +1,34 @@
+.main {
+  max-width: 1750px;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(1010px, auto);
+  row-gap: 200px;
+
+  margin-bottom: 150px;
+}
+
+@media (max-width: $screen-xxl) {
+  .main {
+    max-width: 1150px;
+    grid-template-rows: minmax(600px, auto);
+    row-gap: 150px;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .main {
+    max-width: 850px;
+    row-gap: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .main {
+    max-width: 400px;
+    row-gap: 50px;
+  }
+}

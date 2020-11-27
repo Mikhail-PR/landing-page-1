@@ -1,0 +1,11 @@
+@media (max-width: $screen-md) {
+  .logo__img {
+    width: 140px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .logo__img {
+    width: 120px;
+  }
+}

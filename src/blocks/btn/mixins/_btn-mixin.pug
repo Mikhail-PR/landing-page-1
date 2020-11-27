@@ -1,0 +1,11 @@
+mixin btn(tag, text, mod, href)
+    if (tag==="a")
+        a.btn(class=mod href=href)
+            if (text)
+                p.btn__text=text
+            img.btn__img(src=require("./blocks/btn/img/arrow.png").default, draggable="false")
+    if (tag==="button")
+        button.btn(class=mod)
+            if (text)
+                p.btn__text=text
+            img.btn__img(src=require("./blocks/btn/img/arrow.png").default, draggable="false")

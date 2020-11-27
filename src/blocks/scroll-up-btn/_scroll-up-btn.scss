@@ -1,0 +1,68 @@
+.scroll-up-btn {
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  left: 40px;
+  z-index: 9999;
+
+  .btn__img {
+    display: none;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    width: 5px;
+    height: 24px;
+    background-color: $text-color;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 50%;
+
+    transition: background-color 500ms ease;
+  }
+
+  &:before {
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(50deg);
+  }
+
+  &:after {
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+}
+
+.scroll-up-btn--show {
+  display: block;
+}
+
+@media (max-width: $screen-xxl) {
+  .scroll-up-btn {
+    bottom: 70px;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .scroll-up-btn {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    bottom: 115px;
+    left: 3px;
+
+    &:before,
+    &:after {
+      width: 2px;
+      height: 11px;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .scroll-up-btn {
+    bottom: 130px;
+  }
+}

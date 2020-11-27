@@ -1,0 +1,11 @@
+mixin slider(id, mod)
+    div.slider(id=id, class=mod)
+        div.slider__window
+            block
+        div.slider__nav
+            div.slider__buttons
+                +btn("button", " ", "btn-next btn--square btn--filled btn--shadow-min")
+                +btn("button", " ", "btn-prev btn--square btn--filled btn--shadow-min btn--prev")
+            div.slider__counter 
+                span.slider__cur-num 02
+                span.slider__count /23

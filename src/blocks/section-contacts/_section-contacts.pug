@@ -1,0 +1,23 @@
+section.section-contacts#section-contacts
+    div.section-contacts__title ¿QUIÉRES MÁS #[span INFORMACIÓN?]
+    +form("form--contacts")
+        div.form__wrapper
+            input.form__name(type="text" placeholder="Nombre completo")
+            input.form__email(type="email" placeholder="correoelectró")
+            input.form__phone(type="tel" placeholder="Celular*")
+            select.form__city
+                option.form__option(value="" disabled selected) Ciudad*
+                option.form__option(value="value1") Value 1
+                option.form__option(value="value2") Value 2
+                option.form__option(value="value3") Value 3
+            select.form__product
+                option.form__option(value="" disabled selected) Elige un producto*
+                option.form__option(value="value1") Value 1
+                option.form__option(value="value2") Value 2
+                option.form__option(value="value3") Value 3
+            input.form__address(type="text" placeholder="Dirección")
+            textarea.form__text(type="text" placeholder="Escribe tu mensaje...")
+        div.form__license
+            input.form__checkbox(type="checkbox")
+            p.form__license-text Acepto #[a(href="#") Términos y Condiciones]
+        +btn("button", "SOLICITAR INFO", "btn--filled btn--shadow btn--long")

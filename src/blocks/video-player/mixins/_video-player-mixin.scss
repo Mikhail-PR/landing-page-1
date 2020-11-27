@@ -1,0 +1,5 @@
+@mixin video-preview($preview-img-path) {
+  .video-player {
+    background-image: url($preview-img-path);
+  }
+}

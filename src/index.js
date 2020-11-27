@@ -1,0 +1,9 @@
+import './styles.scss';
+import './scripts/smooth-scrolling';
+import './blocks/socials/scripts/socials';
+import './blocks/section-video/scripts/section-video';
+import './blocks/product-card/scripts/product-card';
+import './blocks/section-slider/scripts/section-slider';
+import './blocks/section-contacts/scripts/section-contact-form';
+import './blocks/footer/scripts/section-footer-form';
+import './blocks/scroll-up-btn/scripts/scroll-up-btn';

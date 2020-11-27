@@ -1,0 +1,71 @@
+.header {
+  min-height: 165px;
+  max-width: 1920px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 185px 20px;
+  margin: 0 auto;
+
+  & > * {
+    flex-shrink: 0;
+  }
+
+  & > :not(:first-child) {
+    align-self: center;
+  }
+
+  & > :not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .header {
+    padding: 10px 50px 20px;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .header {
+    .btn {
+      min-width: 50px;
+      height: 50px;
+      background-color: $secondary-color;
+
+      background-image: url("./blocks/btn/img/socials.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .btn__text {
+        display: none;
+      }
+
+      .btn__img {
+        display: none;
+      }
+    }
+
+    .header__link {
+      background-image: url("./blocks/btn/img/phone.png");
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .header {
+    padding: 10px 15px 20px;
+
+    .btn {
+      min-width: 35px;
+      height: 35px;
+
+      background-size: 35px;
+    }
+
+    .header__link {
+      background-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+footer.footer
+    hr.footer__hr
+    div.footer__wrapper
+        +form("form--footer")
+            input.form__email(type="text" placeholder="Suscríbete al Newsletter")
+            +btn("button", null, "btn--square btn--transparent")
+        div.footer__row
+            div.footer__socials
+                h3.footer__title Síguenos:
+                +socials("socials--footer")
+            div.footer__contacts
+                h3.footer__title Datos de contacto:
+                div.footer__contacts-mail
+                    p.footer__contacts-title Mail:
+                    p.footer__contacts-text contact@nomb$error-colorelamarca.com
+                div.footer__contacts-phone
+                    p.footer__contacts-title Teléfono:
+                    p.footer__contacts-text (+57) 300 789 34 56
+            div.footer__location
+                h3.footer__title Dirección:
+                div.footer__location-address
+                    p.footer__contacts-title Bogotá:
+                    p.footer__contacts-text Calle 12 34 - 56
+                div.footer__location-wrapper
+                    a.footer__location-maps(href="#")
+                        img.footer__location-maps-icon(src=require("./blocks/footer/img/google-maps-icon.png").default, draggable="false")
+                        p.footer__location-maps-text Ir con Maps 
+                    a.footer__location-waze(href="#")
+                        img.footer__location-waze-icon(src=require("./blocks/footer/img/waze-icon.png").default, draggable="false")
+                        p.footer__location-waze-text Ir con Waze
+    hr.footer__hr
+    div.footer__copyright
+        a.footer__terms(href="#") Términos y Condiciones
+        p.footer__rights Nombre de la marca © 2020 - Todos los derechos reservados
+        a.footer__link(href="#")
+            img.footer__link-icon(src=require("./blocks/footer/img/behance-icon.png").default, draggable="false")
+            p.footer__link-text behance.net/ndavidsan

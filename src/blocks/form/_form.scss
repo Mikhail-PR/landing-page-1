@@ -1,0 +1,395 @@
+.form {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+
+  input,
+  textarea,
+  select {
+    min-height: 65px;
+    font-size: 30px;
+    font-family: $title-font;
+    color: $text-color;
+
+    background-color: inherit;
+    border: none;
+    border-bottom: $border;
+    border-radius: 0;
+
+    padding: 0 30px;
+
+    &::placeholder {
+      color: $text-color;
+      text-align: center;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 10px 10px -10px $secondary-color;
+    }
+  }
+}
+
+.form--contacts {
+  flex-direction: column;
+  align-items: center;
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    input,
+    textarea,
+    select {
+      &::placeholder {
+        text-align: left;
+      }
+    }
+
+    select {
+      min-width: 394px;
+
+      & option {
+        background-color: $main-color;
+      }
+    }
+
+    textarea {
+      height: 65px;
+      min-width: 818px;
+      resize: none;
+      transition: height 500ms ease-in;
+
+      text-align: justify;
+      line-height: 1.5;
+
+      padding-top: 15px;
+      padding-bottom: 5px;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      &:focus {
+        height: 260px;
+
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: inherit;
+          border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgba($color: $secondary-color, $alpha: 0.5);
+          border-radius: 5px;
+
+          &:hover {
+            background: $secondary-color;
+          }
+        }
+      }
+    }
+
+    & :nth-child(odd):not(textarea) {
+      margin-right: 30px;
+    }
+  }
+
+  .form__license {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    & > :not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .form__checkbox {
+    min-width: 20px;
+    min-height: 20px;
+
+    border: none;
+    border: 1px solid $secondary-color;
+  }
+
+  .form__license-text {
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: 200;
+    font-size: 20px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.form--footer {
+  width: 490px;
+  height: 65px;
+  margin-bottom: 95px;
+
+  .form__email {
+    min-width: 430px;
+  }
+}
+
+@include form-alert(".form--phone-alert", ".form__phone");
+@include form-alert(".form--city-alert", ".form__city");
+@include form-alert(".form--product-alert", ".form__product");
+@include form-alert(".form--privacy-alert", ".form__privacy");
+@include form-alert(".form--email-alert", ".form__email");
+
+.form__enter-phone-alert,
+.form__enter-city-alert,
+.form__enter-product-alert,
+.form__enter-privacy-alert,
+.form__enter-email-alert {
+  min-width: 394px;
+  position: absolute;
+  top: 110px;
+  right: 470px;
+
+  text-align: right;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 17px;
+  color: $error-color;
+}
+
+.form__enter-city-alert {
+  right: 45px;
+}
+
+.form__enter-product-alert {
+  top: 175px;
+}
+
+.form__enter-privacy-alert {
+  min-width: 310px;
+  text-align: left;
+
+  top: auto;
+  bottom: 80px;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.form__enter-email-alert {
+  min-width: 430px;
+  top: 55px;
+  left: calc(50% - 26px);
+  transform: translate(-50%, -50%);
+  padding: 0 30px;
+}
+
+@media (max-width: $screen-xxl) {
+  .form {
+    input,
+    textarea,
+    select {
+      min-height: 45px;
+      font-size: 21px;
+    }
+  }
+
+  .form--contacts {
+    .form__wrapper {
+      margin-bottom: 20px;
+
+      input {
+        width: 275px;
+      }
+
+      select {
+        min-width: 275px;
+      }
+
+      textarea {
+        height: 45px;
+        min-width: 575px;
+        line-height: 1.05;
+        padding-top: 10px;
+        padding-bottom: 3px;
+
+        &:focus {
+          height: 180px;
+        }
+      }
+
+      & :nth-child(odd):not(textarea) {
+        margin-right: 21px;
+      }
+    }
+
+    .form__license {
+      margin-bottom: 20px;
+
+      & > :not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    .form__checkbox {
+      min-width: 15px;
+      min-height: 15px;
+    }
+
+    .form__license-text {
+      font-size: 15px;
+    }
+
+    .form__enter-phone-alert,
+    .form__enter-city-alert,
+    .form__enter-product-alert,
+    .form__enter-privacy-alert {
+      min-width: 275px;
+      top: 75px;
+      right: 327px;
+      font-size: 12px;
+    }
+
+    .form__enter-city-alert {
+      right: 30px;
+    }
+
+    .form__enter-product-alert {
+      top: 120px;
+    }
+
+    .form__enter-privacy-alert {
+      min-width: 310px;
+      top: auto;
+      bottom: 73px;
+      padding-left: 52px;
+    }
+  }
+
+  .form--footer {
+    width: 340px;
+    height: 45px;
+    margin-bottom: 65px;
+
+    .form__email {
+      min-width: 330px;
+    }
+
+    .form__enter-email-alert {
+      font-size: 12px;
+      min-width: 330px;
+      top: 38px;
+    }
+  }
+}
+
+@media (max-width: $screen-xl) {
+  .form {
+    input,
+    textarea,
+    select {
+      font-size: 18px;
+    }
+  }
+
+  .form--footer {
+    width: 295px;
+
+    .form__email {
+      min-width: 285px;
+    }
+
+    .form__enter-email-alert {
+      min-width: 285px;
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .form--contacts {
+    .form__wrapper {
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
+
+      select {
+        min-width: 100%;
+      }
+
+      textarea {
+        min-width: 100%;
+      }
+
+      & :nth-child(odd):not(textarea) {
+        margin-right: 0;
+      }
+    }
+
+    .form__enter-phone-alert,
+    .form__enter-city-alert,
+    .form__enter-product-alert,
+    .form__enter-privacy-alert {
+      min-width: 297px;
+      top: 120px;
+      right: 22px;
+    }
+
+    .form__enter-city-alert {
+      top: 165px;
+    }
+
+    .form__enter-product-alert {
+      top: 210px;
+    }
+
+    .form__enter-privacy-alert {
+      top: auto;
+      padding-left: 34px;
+      right: 50%;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .form--contacts {
+    .form__enter-phone-alert,
+    .form__enter-city-alert,
+    .form__enter-product-alert {
+      right: 0;
+    }
+
+    .form__enter-privacy-alert {
+      bottom: 63px;
+    }
+  }
+
+  .form--footer {
+    width: 235px;
+
+    .form__email {
+      font-size: 14px;
+    }
+
+    .form__email {
+      min-width: 225px;
+    }
+
+    .form__enter-email-alert {
+      min-width: 225px;
+    }
+  }
+}

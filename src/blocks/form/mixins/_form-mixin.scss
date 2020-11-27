@@ -1,0 +1,28 @@
+@mixin form-alert($mod, $el) {
+  #{$mod} {
+    button {
+      border: 2px solid $error-color;
+      box-shadow: 0 0 10px $error-color;
+      background-color: $error-color;
+
+      ::after {
+        border: 2px solid $error-color;
+        box-shadow: 0 0 10px $error-color;
+      }
+
+      &:hover {
+        background-color: $error-color;
+        box-shadow: 0 0 20px $error-color;
+      }
+    }
+
+    #{$el} {
+      border-bottom: 2px solid $error-color;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0px 10px 10px -10px $error-color;
+      }
+    }
+  }
+}

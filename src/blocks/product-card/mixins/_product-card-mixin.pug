@@ -1,0 +1,14 @@
+mixin product-card(leftText, leftNum, img, title, price, text, mod)
+    div.product-card(class=mod).product-card--disabled.product-card--info-disable
+        div.product-card__out-img-area
+            div.product-card__img-area
+                div.product-card__left
+                    p.product-card__left-text=leftText
+                    p.product-card__left-num=leftNum
+                img.product-card__img(src=img.default, draggable="false")
+            div.product-card__description
+                h3.product-card__title=title
+                p.product-card__price=price
+                div.product-card__info
+                    p.product-card__text=text
+                    +btn("button", "VER DETALLES", "product-card__btn btn--medium btn--transparent btn--min")

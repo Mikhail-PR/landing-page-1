@@ -1,0 +1,17 @@
+include ./_includes
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Landing page 1
+    body.landing-page-background
+        include ./blocks/header/_header
+        main.main
+            include ./blocks/section-product/_section-product
+            include ./blocks/section-video/_section-video
+            include ./blocks/section-slider/_section-slider
+            include ./blocks/section-testimonial/_section-testimonial
+            include ./blocks/section-contacts/_section-contacts
+        include ./blocks/footer/_footer
+        include ./blocks/scroll-up-btn/_scroll-up-btn
